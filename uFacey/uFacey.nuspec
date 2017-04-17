@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>Michael Sinnott</owners>
+    <licenseUrl>https://github.com/msinnott22/uFacey/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/msinnott22/uFacey/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <copyright>Copyright 2017</copyright>
+    <tags>Umbraco Facebook Opengraph API</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" verison="10.0.2"></dependency>
+    </dependencies>
+  </metadata>
+</package>

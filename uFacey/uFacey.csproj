@@ -42,6 +42,10 @@
     <Reference Include="interfaces">
       <HintPath>..\lib\interfaces.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -82,7 +86,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="App_Plugins\uFacey\package.manifest" />
+    <None Include="packages.config" />
+    <None Include="uFacey.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Plugins\uFacey\backOffice\uFaceyTree\controllers\Edit.Controller.js" />
