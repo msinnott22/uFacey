@@ -81,7 +81,7 @@
                 $scope.settings = response.data;
 
                 //Display Success message
-                notificationsService.success(localizationService.localize("analytics_settingsSaved"));
+                notificationsService.success("uFacey Settings Saved Successfully");
             });
 
             //Save settings resource - does a WebAPI POST call
@@ -89,7 +89,7 @@
                 //Don't need anything from response.data back
 
                 //Display Success message
-                notificationsService.success(localizationService.localize("analytics_accountDetailsSaved"));
+                notificationsService.success("uFacey Account Settings Saved Successfully");
             });
 
             //Save settings resource - does a WebAPI POST call
@@ -97,7 +97,7 @@
                 //Don't need anything from response.data back
 
                 //Display Success message
-                notificationsService.success(localizationService.localize("analytics_profileDetailsSaved"));
+                notificationsService.success("uFacey Profile Settings Saved Successfully");
 
                 //Sync ('refresh') the tree!
                 navigationService.syncTree({ tree: tree, path: [-1, $routeParams.id], forceReload: true, activate: true });
