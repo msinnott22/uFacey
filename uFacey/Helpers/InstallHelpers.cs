@@ -3,7 +3,7 @@ using System.Web.Hosting;
 using System.Xml;
 using Umbraco.Core;
 
-namespace uFacey
+namespace uFacey.Helpers
 {
     public class InstallHelpers
     {

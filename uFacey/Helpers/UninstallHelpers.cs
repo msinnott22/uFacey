@@ -2,7 +2,7 @@
 using System.Xml;
 using Umbraco.Web;
 
-namespace uFacey
+namespace uFacey.Helpers
 {
     public class UninstallHelpers
     {

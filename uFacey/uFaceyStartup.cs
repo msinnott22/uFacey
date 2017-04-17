@@ -2,6 +2,7 @@
 using System.Configuration;
 using System.Linq;
 using System.Web.Configuration;
+using uFacey.Helpers;
 using umbraco.BusinessLogic;
 using umbraco.cms.businesslogic.packager;
 using Umbraco.Core;
@@ -9,7 +10,7 @@ using Umbraco.Web.Trees;
 
 namespace uFacey
 {
-    public class UmbracoStartup : ApplicationEventHandler
+    public class uFaceyStartup : ApplicationEventHandler
     {
         private const string AppSettingKey = "uFaceyStartupInstalled";
 
