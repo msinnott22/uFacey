@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$</id>
+    <id>uFacey</id>
     <version>0.1.0</version>
-    <title>$title$</title>
-    <authors>$author$</authors>
+    <title>uFacey for Umbraco</title>
+    <authors>Michael Sinnott</authors>
     <owners>Michael Sinnott</owners>
     <licenseUrl>https://github.com/msinnott22/uFacey/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/msinnott22/uFacey/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
+    <description>Facebook Opengraph API plugin for Umbraco</description>
     <copyright>Copyright 2017</copyright>
     <tags>Umbraco Facebook Opengraph API</tags>
     <dependencies>
