@@ -90,6 +90,7 @@
     <None Include="App_Plugins\uFacey\package.manifest" />
     <None Include="packages.config" />
     <None Include="uFacey.nuspec" />
+    <None Include="Utils\CreateNuget.cmd" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Plugins\uFacey\backOffice\uFaceyTree\controllers\Edit.Controller.js" />
