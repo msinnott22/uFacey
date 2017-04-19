@@ -3,17 +3,21 @@ angular.module("umbraco.resources")
     .factory("settingsResource", function ($http, $cookieStore) {
         return {
 
-            checkauth: function () {
-                return $http.get(this.getApiPath() + "Analytics/SettingsApi/GetAuth");
+            getVersion: function() {
+                return $http.get(this.getApiPath() + "uFacey/SettingsApi/GetUmbracoVersion");
             },
 
-            getall: function () {
-                return $http.get(this.getApiPath() + "Analytics/SettingsApi/GetSettings");
-            },
+            //checkauth: function () {
+            //    return $http.get(this.getApiPath() + "Analytics/SettingsApi/GetAuth");
+            //},
 
-            save: function (settings) {
-                return $http.post(this.getApiPath() + "Analytics/SettingsApi/PostSettings", angular.toJson(settings));
-            },
+            //getall: function () {
+            //    return $http.get(this.getApiPath() + "Analytics/SettingsApi/GetSettings");
+            //},
+
+            //save: function (settings) {
+            //    return $http.post(this.getApiPath() + "Analytics/SettingsApi/PostSettings", angular.toJson(settings));
+            //},
 
             //getaccounts: function () {
             //    return $http.get(this.getApiPath() + "Analytics/AnalyticsApi/GetAccounts");
@@ -23,27 +27,27 @@ angular.module("umbraco.resources")
             //    return $http.get(this.getApiPath() + "Analytics/AnalyticsApi/GetProfilesFromAccount?accountId=" + accountId);
             //},
 
-            saveAccount: function (accountData) {
-                return $http.post(this.getApiPath() + "Analytics/SettingsApi/PostAccount", angular.toJson(accountData));
-            },
+            //saveAccount: function (accountData) {
+            //    return $http.post(this.getApiPath() + "Analytics/SettingsApi/PostAccount", angular.toJson(accountData));
+            //},
 
-            saveProfile: function (profileData) {
-                return $http.post(this.getApiPath() + "Analytics/SettingsApi/PostProfile", angular.toJson(profileData));
-            },
+            //saveProfile: function (profileData) {
+            //    return $http.post(this.getApiPath() + "Analytics/SettingsApi/PostProfile", angular.toJson(profileData));
+            //},
 
-            getaccount: function () {
-                return $http.get(this.getApiPath() + "Analytics/SettingsApi/GetAccount");
-            },
+            //getaccount: function () {
+            //    return $http.get(this.getApiPath() + "Analytics/SettingsApi/GetAccount");
+            //},
 
-            getprofile: function () {
-                return $http.get(this.getApiPath() + "Analytics/SettingsApi/GetProfile");
-            },
+            //getprofile: function () {
+            //    return $http.get(this.getApiPath() + "Analytics/SettingsApi/GetProfile");
+            //},
 
             getApiPath: function () {
-                var path = $cookieStore.get("analyticsUmbracoVersion");
+                var path = $cookieStore.get("uFaceyUmbracoVersion");
                 if (path == null) {
                     try {
-                        var version = $http.get("backoffice/Analytics/SettingsApi/GetUmbracoVersion");
+                        var version = $http.get("backoffice/uFacey/SettingsApi/GetUmbracoVersion");
                         path = "backoffice/";
                     } catch (err) {
                         path = "";
