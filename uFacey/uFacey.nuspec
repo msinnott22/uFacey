@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<package >
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>uFacey</id>
-    <version>0.1.0</version>
+    <version>0.0.0</version>
     <title>uFacey for Umbraco</title>
     <authors>Michael Sinnott</authors>
     <owners>Michael Sinnott</owners>
@@ -12,11 +12,13 @@
     <description>Facebook Opengraph API plugin for Umbraco</description>
     <copyright>Copyright 2017</copyright>
     <tags>Umbraco Facebook Opengraph API</tags>
+    <language>en-GB</language>
     <dependencies>
       <dependency id="Newtonsoft.Json" version="6.0.8"></dependency>
     </dependencies>
   </metadata>
   <files>
     <file src="lib\*.*" target="lib\net40\" />
+    <file src="App_Plugins\*" target="content" />
   </files>
 </package>

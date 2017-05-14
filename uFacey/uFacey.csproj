@@ -33,7 +33,8 @@
     <ApplicationManifest>App_Plugins\uFacey\package.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="businesslogic">
+    <Reference Include="businesslogic, Version=1.0.6274.27355, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>lib\businesslogic.dll</HintPath>
     </Reference>
     <Reference Include="cms">

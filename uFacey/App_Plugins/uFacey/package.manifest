@@ -1,3 +1,7 @@
 ﻿{
-  javascrip: []
+  javascrip: [
+	'~/App_Plugins/uFacey/backOffice/uFaceyTree/controllers/Edit.Controller.js',
+	'~/App_Plugins/uFacey/backOffice/uFaceyTree/controllers/Settings.Controller.js',
+	'~/App_Plugins/uFacey/backOffice/uFaceyTree/resources/Settings.Resource.js'
+  ]
 }
