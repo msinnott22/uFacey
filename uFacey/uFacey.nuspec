@@ -14,11 +14,11 @@
     <tags>Umbraco Facebook Opengraph API</tags>
     <language>en-GB</language>
     <dependencies>
-      <dependency id="Newtonsoft.Json" version="6.0.8"></dependency>
+      <dependency id="UmbracoCms.Core" version="7.6.1" />
     </dependencies>
   </metadata>
-  <files>
+  <!--<files>
     <file src="lib\*.*" target="lib\net40\" />
     <file src="App_Plugins\*" target="content" />
-  </files>
+  </files>-->
 </package>
