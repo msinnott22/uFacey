@@ -274,6 +274,10 @@
       <HintPath>..\packages\UmbracoCms.Core.7.6.1\lib\net45\TidyNet.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="uFacey, Version=0.0.1.36048, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uFacey.0.0.0\lib\net452\uFacey.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="umbraco, Version=1.0.6337.40640, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\UmbracoCms.Core.7.6.1\lib\net45\umbraco.dll</HintPath>
       <Private>True</Private>
@@ -312,6 +316,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Plugins\uFacey\backOffice\uFaceyTree\controllers\Edit.Controller.js" />
+    <Content Include="App_Plugins\uFacey\backOffice\uFaceyTree\controllers\Settings.Controller.js" />
+    <Content Include="App_Plugins\uFacey\backOffice\uFaceyTree\edit.html" />
+    <Content Include="App_Plugins\uFacey\backOffice\uFaceyTree\partials\settings.html" />
+    <Content Include="App_Plugins\uFacey\backOffice\uFaceyTree\resources\Settings.Resource.js" />
     <Content Include="packages.config" />
     <Content Include="config\imageprocessor\security.config" />
     <Content Include="config\imageprocessor\processing.config" />
@@ -381,6 +390,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
